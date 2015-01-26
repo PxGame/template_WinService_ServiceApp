@@ -15,7 +15,7 @@ BOOL SerivceInstall()
 	TCHAR tsFilePath[MAX_PATH];
 	ZeroMemory(tsFilePath, MAX_PATH);
 	GetCurrentDirectory(MAX_PATH, tsFilePath);
-	_tcscat_s<MAX_PATH>(tsFilePath, TEXT("\\ServiceApp.exe"));
+	_tcscat_s<MAX_PATH>(tsFilePath, TEXT("\\ServiceApp32.exe"));
 	//_tcscpy_s	<MAX_PATH>(tsFilePath, TEXT("\\ServiceApp.exe"));
 
 	//创建服务

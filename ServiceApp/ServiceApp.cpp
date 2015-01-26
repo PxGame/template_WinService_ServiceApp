@@ -60,7 +60,7 @@ void WINAPI ServiceMain(DWORD dwArgc, LPTSTR *lpszArgv)
 	//直到接收到停止信号为止
 	while (WaitForSingleObject(stopEvent, 0) != WAIT_OBJECT_0)
 	{
-		OutMsg(TEXT("SC#Sleep 2s\n"), GetLastError());
+		OutMsg(TEXT("SC#Sleep 2s\n"));
 		Sleep(2000);
 	}
 
